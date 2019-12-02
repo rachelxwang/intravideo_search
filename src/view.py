@@ -203,7 +203,7 @@ class GUI:
         job = self.job
         process = self.process
         if self.process:
-            exitcode = self.process.exitcode
+            exitcode = -1 * self.process.exitcode
             print(exitcode)
             if exitcode is not None:
                 self.process.terminate()
